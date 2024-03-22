@@ -54,7 +54,7 @@ public class CheckoutPage extends BasePage {
     private WebElement DeliveryExpress;
     @FindBy(xpath = "//p[contains(text(), 'Please enter a valid email address')]")
     private WebElement enterValidEmailMessage;
-    @FindBy(xpath = "//p[contains(text(), 'First name is required')]")
+    @FindBy(xpath = "//p[contains(text(), 'First name is required')]") // siti visi kintamieji gali buti aprasomas kaip vianas ir zaidziama su parametrizacija
     private WebElement firstNameIsRequiredMessage;
     @FindBy(xpath = "//p[contains(text(), 'Email address is required')]")
     private WebElement emailIsRequiredMessage;
@@ -79,7 +79,7 @@ public class CheckoutPage extends BasePage {
         btnQuantity.get(0).click();
     }
 
-    public void changeQuantityByEnteringNumber() {
+    public void changeQuantityByEnteringNumber() { //changeQuantityByEnteringNumber ir changeQuantityByEnteringQuantityWithMinus gali buti vienas metodas
         WebElement quantity = quantityInput.get(0);
         quantity.sendKeys(Keys.chord(Keys.CONTROL, "a") + Keys.DELETE);
         quantity.sendKeys("7");
