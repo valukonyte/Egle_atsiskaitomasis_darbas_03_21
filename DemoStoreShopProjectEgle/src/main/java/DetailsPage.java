@@ -57,11 +57,11 @@ public class DetailsPage extends BasePage {
     }
 
     public boolean productImageIsDisplayed() {
-
+//nereikalingas tarpas
         return momTattooCushionImage.isDisplayed();
     }
     public boolean productLabelIsDisplayed() {
-
+//nereikalingas tarpas
         return productDetailsLabel.isDisplayed();
     }
     public boolean productColorIsDisplayed() {
@@ -92,7 +92,7 @@ public class DetailsPage extends BasePage {
         quantityDropDown.get(quantity).click();
     }
     public String getSelectedQuantityText() {
-
+//tarpas
         return selectedQuantity.getText().trim();
     }
     public void clickProductWomanManMeniu() {
