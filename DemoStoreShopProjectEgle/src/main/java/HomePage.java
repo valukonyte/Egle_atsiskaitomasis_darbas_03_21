@@ -10,19 +10,19 @@ public class HomePage extends BasePage {
     @FindBy(css = ".MuiRadio-root")
     private List<WebElement> radioBtnCategory;
     @FindBy(xpath = "//span[normalize-space()='Hoodies']")
-    private WebElement category3Text;
+    private WebElement category3Text; //pakeisti pavadinima , kad nebutu 3 , o atspindetu, kad tai Hoodies
     @FindBy(xpath = "//span[normalize-space()='Drinkware']")
-    private WebElement category2Text;
+    private WebElement category2Text; //pakeisti pavadinima , kad nebutu 3 , o atspindetu, kad tai Drinkware
     @FindBy(css = ".MuiRadio-root.Mui-checked")
     private List<WebElement> checkedCategory;
     @FindBy(css = ".MuiCheckbox-root")
     private List<WebElement> checkBoxType;
     @FindBy(xpath = "//span[normalize-space()='Tote Bag']")
-    private WebElement type5Text;
+    private WebElement type5Text; //pakeisti pavadinima , kad nebutu 3 , o atspindetu, kad tai Tote Bag
     @FindBy(css = ".MuiCheckbox-root.Mui-checked")
     private List<WebElement> checkedType;
     @FindBy(xpath = "//span[normalize-space()='Blanket']")
-    private WebElement type7Text;
+    private WebElement type7Text; //pakeisti pavadinima , kad nebutu 3 , o atspindetu, kad tai Blanket
     @FindBy(xpath = "//button[normalize-space()='View more products']")
     private WebElement btnViewMoreProducts;
     @FindBy(css = ".ProductCard_productImage__nbfNy")
