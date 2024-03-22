@@ -8,14 +8,14 @@ import org.openqa.selenium.support.FindBy;
 
 import java.util.List;
 
-public class HomePageTest extends BaseTest {
+public class HomePageTest extends BaseTest { //pabandykime kur imanoma sleep pakeisti i waiter'ius (cia visuose testu klasese turiu omeny)
     HomePage homePage;
 
     @Test
     void userCanSelectOneCategory() {
         homePage = new HomePage(driver);
         homePage.clickOneCategory(3);
-        Assertions.assertEquals("Hoodies", homePage.getCategory3Text(), "Pasirinkta kategorija nesutampa");
+        Assertions.assertEquals("Hoodies", homePage.getCategory3Text(), "Pasirinkta kategorija nesutampa"); //Visur lietuviskus tekstus pakeisti i angliskus
         Assertions.assertEquals(1, homePage.countCheckedCategory());
     }
 
