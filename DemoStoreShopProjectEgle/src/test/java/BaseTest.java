@@ -13,13 +13,13 @@ public class BaseTest {
     @BeforeEach
     void setup()
     {
-        //driver = new ChromeDriver();
+        //driver = new ChromeDriver(); 
         driver = new FirefoxDriver();
         driver.get("https://demostore.shop/");
     }
     @AfterEach
     void close()
     {
-        //  driver.quit();
+        //  driver.quit(); //sita atkomentuoti
     }
 }
