@@ -15,7 +15,7 @@ public class CheckoutPage extends BasePage {
     }
 
     @FindBy(xpath = "//h1[normalize-space()='Secure checkout']")
-    private WebElement LblSecureCheckout;
+    private WebElement LblSecureCheckout; //dubliuojasi kodas, yra kitas lblSecureCheckout 52 eilutej
     @FindBy(css = ".flex.flex-row.h-8 button")
     private List<WebElement> btnQuantity;
     @FindBy(css = ".flex.flex-row.h-8 input")
